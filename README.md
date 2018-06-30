@@ -1,2 +1,2 @@
 # competition
-This is the repository For Some of the challenges 
+Solutions to the some challenges on online coding competition sites.
