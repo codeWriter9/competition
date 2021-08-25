@@ -18,6 +18,8 @@ public class ListNode {
         this.next = next;
     }
 
+    Integer val() {return this.val;}
+
     ListNode next() {
         return next;
     }
@@ -44,10 +46,34 @@ public class ListNode {
         return head;
     }
 
+    public static int[] array(ListNode head) {
+        if(head != null) {
+            int count = 0;
+            ListNode current = head;
+            while(current!=null) {
+                count++;
+                current = current.next;
+            }
+            int [] array = new int[count];
+            current = head;
+            count = 0;
+            while(current!=null) {
+                array[count++] = current.val;
+                current = current.next;
+            }
+            return array;
+        }
+        return null;
+    }
+
     public static void print(ListNode head) {
         while(head != null) {
             System.out.println(head.val);
             head = head.next;
         }
+    }
+
+    public String toString() {
+        return "ListNode val=" + val;
     }
 }

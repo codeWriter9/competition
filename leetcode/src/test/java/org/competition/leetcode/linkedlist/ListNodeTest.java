@@ -1,11 +1,12 @@
 package org.competition.leetcode.linkedlist;
 
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.competition.leetcode.linkedlist.ListNode.list;
-import static org.competition.leetcode.linkedlist.ListNode.print;
+import static org.competition.leetcode.linkedlist.ListNode.*;
+import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertNotNull;
 
 public class ListNodeTest {
@@ -20,7 +21,7 @@ public class ListNodeTest {
     @Test
     public void test() {
         assertNotNull(root);
-        print(list(1, 2, 3, 4));
+        assertArrayEquals(new int[]{1, 2, 3, 4}, array(list(1, 2, 3, 4)));
     }
 
     @After
