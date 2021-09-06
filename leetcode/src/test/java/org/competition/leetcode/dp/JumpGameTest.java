@@ -20,14 +20,22 @@ public class JumpGameTest {
         assertNotNull(jumpGame);
         assertTrue(jumpGame.canJump(new int[]{0}));
         assertTrue(jumpGame.canJump(new int[]{1}));
-        assertTrue(jumpGame.canJump(new int[]{1,1}));
-        assertFalse(jumpGame.canJump(new int[]{0,1}));
-        assertFalse(jumpGame.canJump(new int[]{1,0,1}));
-        assertTrue(jumpGame.canJump(new int[]{2,0,1}));
-        assertTrue(jumpGame.canJump(new int[]{2,3,1,1,4}));
-        assertFalse(jumpGame.canJump(new int[]{3,2,1,0,4}));
-        assertTrue(jumpGame.canJump(new int[]{3,2,2,0,1}));
-        assertFalse(jumpGame.canJump(new int[]{3,2,1,0,0}));
+        assertTrue(jumpGame.canJump(new int[]{1, 1}));
+        assertFalse(jumpGame.canJump(new int[]{0, 1}));
+        assertFalse(jumpGame.canJump(new int[]{1, 0, 1}));
+        assertTrue(jumpGame.canJump(new int[]{2, 0, 1}));
+        assertTrue(jumpGame.canJump(new int[]{2, 3, 1, 1, 4}));
+        assertFalse(jumpGame.canJump(new int[]{3, 2, 1, 0, 4}));
+        assertTrue(jumpGame.canJump(new int[]{3, 2, 2, 0, 1}));
+        assertFalse(jumpGame.canJump(new int[]{3, 2, 1, 0, 0}));
+    }
+
+    @Test
+    public void testJumpGame2() {
+        assertNotNull(jumpGame);
+        //assertEquals(0, jumpGame.jump(new int[]{4}));
+        //assertEquals(2, jumpGame.jump(new int[]{2,3,1,1,4}));
+        //assertEquals(2, jumpGame.jump(new int[]{2,3,0,1,4}));
     }
 
     @After
