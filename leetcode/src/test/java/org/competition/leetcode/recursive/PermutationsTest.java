@@ -1,35 +1,49 @@
 package org.competition.leetcode.recursive;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
-import org.junit.Assert;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
-public class PermutationsTest extends TestCase {
+import static java.util.Arrays.asList;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+
+public class PermutationsTest {
 
     private Permutations permutations;
 
-    public PermutationsTest(String name) {
-        super(name);
+    private List<List<Integer>> permutationList = asList(
+            asList(1, 2, 3, 4), asList(1, 2, 4, 3), asList(1, 3, 2, 4), asList(1, 3, 4, 2),
+            asList(1, 4, 2, 3), asList(1, 4, 3, 2), asList(2, 1, 3, 4), asList(2, 1, 4, 3),
+            asList(2, 3, 1, 4), asList(2, 3, 4, 1), asList(2, 4, 1, 3), asList(2, 4, 3, 1),
+            asList(3, 1, 2, 4), asList(3, 1, 4, 2), asList(3, 2, 1, 4), asList(3, 2, 4, 1),
+            asList(3, 4, 1, 2), asList(3, 4, 2, 1), asList(4, 1, 2, 3), asList(4, 1, 3, 2),
+            asList(4, 2, 1, 3), asList(4, 2, 3, 1), asList(4, 3, 1, 2), asList(4, 3, 2, 1)
+    );
+
+    @Before
+    public void before() {
         permutations = new Permutations();
     }
 
-    public static Test suite() {
-        return new TestSuite(PermutationsTest.class);
-    }
-
+    @Test
     public void testPermutation() {
-        Assert.assertNotNull(permutations);
-        List<Integer> nums = Arrays.asList(1, 2, 3, 4);
-        List<List<Integer>> permutationList = permutations.permute(nums, new ArrayList<>(), nums.size());
-        System.out.println(permutationList);
+        assertNotNull(permutations);
+        List<Integer> nums = asList(1, 2, 3, 4);
+        assertEquals(permutationList, permutations.permute(nums, new ArrayList<>(), nums.size()));
     }
 
-    public void testReverseList() {
+    @Test
+    public void testPermutation2() {
+        List<Integer> nums = asList(1, 2, 3, 4);
+        assertEquals(permutationList, permutations.permute(nums));
+    }
 
+    @After
+    public void after() {
+        permutations = null;
     }
 }

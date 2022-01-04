@@ -15,7 +15,6 @@ public class NQueens {
         fill(board);
         printBoard(board);
         System.out.println();
-
         canPlace(board, new ArrayList<>(), 0);
 
     }

@@ -1,23 +1,19 @@
 package org.competition.leetcode.array;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
 import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
 
-public class MatrixManipulationTest extends TestCase {
+public class MatrixManipulationTest {
 
     private MatrixManipulation matrixManipulation;
 
-    public MatrixManipulationTest(String testName) {
-        super(testName);
+    @Before
+    public void before() {
         matrixManipulation = new MatrixManipulation();
     }
 
-    public static Test suite() {
-        return new TestSuite(MatrixManipulationTest.class);
-    }
-
+    @Test
     public void testMatrixTranspose3X3() {
         Assert.assertArrayEquals(new int[][]{
                 {1, 4, 7},
@@ -28,6 +24,7 @@ public class MatrixManipulationTest extends TestCase {
                 {7, 8, 9}}));
     }
 
+    @Test
     public void testMatrixTranspose4X4() {
         Assert.assertArrayEquals(new int[][]{
                 {1, 5, 9,  13},
@@ -40,6 +37,7 @@ public class MatrixManipulationTest extends TestCase {
                 {13, 14, 15, 16}}));
     }
 
+    @Test
     public void testMatrixReflect3X3() {
         Assert.assertArrayEquals(new int[][]{
                 {3, 2, 1},
@@ -50,6 +48,7 @@ public class MatrixManipulationTest extends TestCase {
                 {7, 8, 9}}));
     }
 
+    @Test
     public void testMatrixReflect4X4() {
         Assert.assertArrayEquals(new int[][]{
                 {4,   3,  2, 1},
@@ -62,6 +61,7 @@ public class MatrixManipulationTest extends TestCase {
                 {13, 14, 15, 16}}));
     }
 
+    @Test
     public void testMatrixRotate3X3() {
         Assert.assertArrayEquals(new int[][]{
                 {7, 4, 1},
@@ -70,8 +70,9 @@ public class MatrixManipulationTest extends TestCase {
                 {1, 2, 3},
                 {4, 5, 6},
                 {7, 8, 9}}));
-        }
+    }
 
+    @Test
     public void testMatrixRotate4X4() {
         Assert.assertArrayEquals(new int[][]{
                 {15, 13,  2,  5},
@@ -83,4 +84,8 @@ public class MatrixManipulationTest extends TestCase {
                 {13,  3,  6,  7},
                 {15, 14, 12, 16}}));
         }
+
+    public void after() {
+        matrixManipulation = null;
+    }
 }

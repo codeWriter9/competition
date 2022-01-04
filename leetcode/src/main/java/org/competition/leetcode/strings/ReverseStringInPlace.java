@@ -13,4 +13,19 @@ public class ReverseStringInPlace {
         }
         return new String(array);
     }
+
+    public String reverseStringInPlace(String str) {
+        if (str == null || "".equals(str)) return str;
+        char[] array = str.toCharArray();
+        int left = 0;
+        int right =array.length -1;
+        while(left < right) {
+            char temp = array[left];
+            array[left] = array[right];
+            array[right] = temp;
+            left++;
+            right--;
+        }
+        return new String(array);
+    }
 }

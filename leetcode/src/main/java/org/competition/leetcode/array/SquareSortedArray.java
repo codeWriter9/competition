@@ -36,5 +36,4 @@ public class SquareSortedArray {
         }
         return result;
     }
-
 }

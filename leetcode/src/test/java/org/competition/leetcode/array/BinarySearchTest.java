@@ -26,6 +26,15 @@ public class BinarySearchTest {
         assertEquals(-1, binarySearch.search(new int[]{-1, 0, 3, 5, 9, 12}, -2));
     }
 
+    @Test
+    public void testBinarySearch2() {
+        assertNotNull(binarySearch);
+        assertEquals(4, binarySearch.searchAnotherWay(new int[]{-1, 0, 3, 5, 9, 12}, 9));
+        assertEquals(-1, binarySearch.searchAnotherWay(new int[]{-1, 0, 3, 5, 9, 12}, 2));
+        assertEquals(-1, binarySearch.searchAnotherWay(new int[]{-1, 0, 3, 5, 9, 12}, 13));
+        assertEquals(-1, binarySearch.searchAnotherWay(new int[]{-1, 0, 3, 5, 9, 12}, -2));
+    }
+
     @After
     public void after() {
         binarySearch = null;

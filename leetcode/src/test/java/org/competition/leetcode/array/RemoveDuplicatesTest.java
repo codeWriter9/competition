@@ -1,23 +1,23 @@
 package org.competition.leetcode.array;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+import static org.junit.Assert.assertNotNull;
 
 
-public class RemoveDuplicatesTest extends TestCase {
+public class RemoveDuplicatesTest {
 
     private RemoveDuplicates removeDuplicates;
 
-    public RemoveDuplicatesTest(String testName) {
-        super(testName);
+    @Before
+    public void before() {
         removeDuplicates = new RemoveDuplicates();
     }
 
-    public static Test suite() {
-        return new TestSuite(RemoveDuplicatesTest.class);
-    }
 
+    @Test
     public void testRemovesDuplicatesTest0() {
         assertNotNull(removeDuplicates);
         int[] nums = new int[]{}; // Input array
@@ -30,7 +30,7 @@ public class RemoveDuplicatesTest extends TestCase {
         }
     }
 
-
+    @Test
     public void testRemovesDuplicatesTest() {
         assertNotNull(removeDuplicates);
         int[] nums = new int[]{1, 1, 2}; // Input array
@@ -43,6 +43,7 @@ public class RemoveDuplicatesTest extends TestCase {
         }
     }
 
+    @Test
     public void testRemovesDuplicatesTest1() {
         assertNotNull(removeDuplicates);
         int[] nums = new int[]{0, 0, 1, 1, 1, 2, 2, 3, 3, 4}; // Input array
@@ -53,5 +54,10 @@ public class RemoveDuplicatesTest extends TestCase {
         for (int i = 0; i < k; i++) {
             assert nums[i] == expectedNums[i];
         }
+    }
+
+    @After
+    public void after() {
+        removeDuplicates = null;
     }
 }

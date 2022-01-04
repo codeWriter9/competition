@@ -31,4 +31,16 @@ public class UnionFind {
         return find(x) == find(y);
     }
 
+    // count the number of roots
+    int getConnectedComponentCount() {
+        if(root.length == 0) return 0;
+        int count = 0;
+        for (int i=0; i<root.length; i++) {
+            if (root[i] == i) {
+                count++;
+            }
+        }
+        return count;
+    }
+
 }

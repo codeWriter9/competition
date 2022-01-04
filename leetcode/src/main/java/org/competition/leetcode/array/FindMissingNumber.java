@@ -2,7 +2,6 @@ package org.competition.leetcode.array;
 
 import java.util.*;
 
-import static java.lang.Math.max;
 import static java.util.Arrays.sort;
 import static java.util.function.Function.identity;
 

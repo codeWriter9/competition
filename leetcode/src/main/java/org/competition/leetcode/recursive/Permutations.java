@@ -8,6 +8,30 @@ import static java.util.Collections.swap;
 
 public class Permutations {
 
+    public List<List<Integer>> permute(List<Integer> nums) {
+        List<List<Integer>> permutations = new ArrayList<>();
+        if (nums == null || nums.size() == 0) return permutations;// if there are no numbers then it there are no permutations
+        return permute(permutations, nums, new ArrayList<>(), new boolean[nums.size()]);// return the permutations
+    }
+
+    private List<List<Integer>> permute(List<List<Integer>> permutations, List<Integer> nums, List<Integer> current,
+                                        boolean[] visited) {
+        if (nums.size() == current.size()) {// if all the numbers are taken
+            permutations.add(current);// add the current permutation to the list of permutation
+            return permutations;// return
+        }
+        for (int i = 0; i < nums.size(); i++) { // for all elements
+            if (visited[i]) continue;// check if visited
+            visited[i] = true;// set element marked as taken
+            current.add(nums.get(i));// Add element
+            permute(permutations, nums, new ArrayList<>(current), visited);// permute for next
+            current.remove(Integer.valueOf(nums.get(i)));// remove the element
+            visited[i] = false;// mark the senitel as false
+        }
+        return permutations; // return
+    }
+
+
     public List<List<Integer>> permute(List<Integer> nums, List<List<Integer>> permutation, int index) {
         permutation.add(new ArrayList(nums));
         int k = largestK(nums);

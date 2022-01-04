@@ -2,8 +2,8 @@ package org.competition.leetcode.linkedlist;
 
 public class ListNode {
 
-    private int val;
-    private ListNode next;
+    int val;
+    ListNode next;
 
     ListNode() {
     }
@@ -18,13 +18,13 @@ public class ListNode {
         this.next = next;
     }
 
-    Integer val() {return this.val;}
+    public Integer val() {return this.val;}
 
-    ListNode next() {
+    public ListNode next() {
         return next;
     }
 
-    void next(ListNode next) {
+    public void next(ListNode next) {
         this.next = next;
     }
 

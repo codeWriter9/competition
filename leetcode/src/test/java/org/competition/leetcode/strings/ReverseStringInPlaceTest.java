@@ -26,6 +26,15 @@ public class ReverseStringInPlaceTest {
         Assert.assertEquals("malayalaM", reverseStringInPlace.reverseString("Malayalam"));
     }
 
+    @Test
+    public void testReverseStringInPlace2() {
+        Assert.assertNotNull(reverseStringInPlace);
+        Assert.assertEquals("Shoddy", reverseStringInPlace.reverseStringInPlace("yddohS"));
+        Assert.assertEquals("", reverseStringInPlace.reverseStringInPlace(""));
+        Assert.assertNull(reverseStringInPlace.reverseStringInPlace(null));
+        Assert.assertEquals("malayalaM", reverseStringInPlace.reverseStringInPlace("Malayalam"));
+    }
+
     @After
     public void after() {
         reverseStringInPlace = null;

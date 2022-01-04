@@ -1,21 +1,16 @@
 package org.competition.leetcode.dp;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import org.junit.After;
 import org.junit.Assert;
+import org.junit.Before;
 
-public class MaxSubArrayTest extends TestCase {
+public class MaxSubArrayTest {
 
     private MaxSubArray maxSubArray;
 
-    public MaxSubArrayTest(String name) {
-        super(name);
+    @Before
+    public void before() {
         maxSubArray = new MaxSubArray();
-    }
-
-    public static Test suite() {
-        return new TestSuite(MaxSubArrayTest.class);
     }
 
     public void testMaxSubArray() {
@@ -24,5 +19,10 @@ public class MaxSubArrayTest extends TestCase {
         Assert.assertEquals(6, maxSubArray.maxSubArray(new int[]{-2,1,-3,4,-1,2,1,-5,4}));
         long end = System.currentTimeMillis();
         System.out.println("Time Taken:" + (end - start) + "milli secs:");
+    }
+
+    @After
+    public void after() {
+        maxSubArray = null;
     }
 }

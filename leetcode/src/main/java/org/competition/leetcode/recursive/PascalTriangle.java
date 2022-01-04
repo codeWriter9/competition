@@ -7,6 +7,19 @@ import static java.util.Arrays.asList;
 
 public class PascalTriangle {
 
+    public List<Integer> getRecurrenceRow(int n) {
+        List<Integer> result = new ArrayList<>();
+        for(int k=0;k<=n;k++) {
+            result.add(nk(n, k));
+        }
+        return result;
+    }
+
+    private int nk(int n, int k) {
+        if(n == 0 || k == 0 || n == k) return 1;
+        else return nk(n - 1, k) + nk(n - 1, k - 1);
+    }
+
     public List<Integer> getRow(int rowIndex) {
         if(rowIndex == 0) return asList(1);
         if(rowIndex == 1) return asList(1, 1);
