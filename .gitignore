@@ -5,6 +5,7 @@
 
 # Unit test reports
 *.lst
+**/*/*.lst
 *Test*.xml
 *Test*.txt
 
@@ -47,3 +48,7 @@ hs_err_pid*
 ../*
 target
 target/*
+leetcode/target
+leetcode/target/*
+**/target
+**/target/*
