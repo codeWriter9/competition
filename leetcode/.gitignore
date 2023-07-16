@@ -47,3 +47,8 @@ hs_err_pid*
 ../*
 target
 target/*
+
+# Intellij
+.idea/
+*.iml
+*.iws

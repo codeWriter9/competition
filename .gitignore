@@ -49,3 +49,8 @@ target
 target/*
 **/target/*
 */target/*
+
+# Intellij
+.idea/
+*.iml
+*.iws
