@@ -3,7 +3,7 @@ package org.competition.leetcode.trees;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import sun.reflect.generics.tree.Tree;
+
 
 import static org.competition.leetcode.trees.TreeNode.inOrder;
 import static org.competition.leetcode.trees.TreeNode.tree;
