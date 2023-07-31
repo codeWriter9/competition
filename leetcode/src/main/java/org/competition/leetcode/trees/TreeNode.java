@@ -110,4 +110,10 @@ public class TreeNode {
             inOrder(root.right);
         }
     }
+
+    public static boolean equals(TreeNode r1, TreeNode r2) {
+        if(r1 == null && r2 == null) return true;
+        else if(r1 == null || r2 == null) return false;
+        else return r1.val == r2.val && equals(r1.left, r2.left) && equals(r1.right, r2.right);
+    }
 }
