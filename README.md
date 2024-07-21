@@ -11,3 +11,6 @@ Path - _**Two Pointer**_
 - [Palindrome.java](leetcode/src/main/java/org/competition/leetcode/array/Palindrome2.java)
 - [CyclicLinkedList.java](leetcode/src/main/java/org/competition/leetcode/linkedlist/CyclicLinkedList.java)
 - [ReverseStringInPlace.java](leetcode/src/main/java/org/competition/leetcode/strings/ReverseStringInPlace.java)
+
+Path -_**Math**_
+- [PowerOfThree.java](leetcode/src/main/java/org/competition/leetcode/math/PowerOfThree.java)
