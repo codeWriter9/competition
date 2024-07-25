@@ -18,6 +18,8 @@ public class RobotRoomCleanerTest {
     @Test
     public void testRobotRoomCleaner() {
         assertNotNull(robotRoomCleaner);
+        robotRoomCleaner.check(new int[][]{{4, 5},
+                {6, 7}});
     }
 
     @After
