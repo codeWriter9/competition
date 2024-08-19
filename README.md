@@ -15,3 +15,10 @@ Path - _**Two Pointer**_
 
 Path -_**Math**_
 - [PowerOfThree.java](leetcode/src/main/java/org/competition/leetcode/math/PowerOfThree.java)
+
+Path -_**Math in String**_
+ - https://leetcode.com/problems/plus-one/description/ [TODO]
+ - https://leetcode.com/problems/add-binary/description/ [TODO]
+ - https://leetcode.com/problems/add-strings/description/ [TODO]
+ - https://leetcode.com/problems/add-two-numbers/description/ [TODO]
+ - https://leetcode.com/problems/multiply-strings/description/ [TODO]
