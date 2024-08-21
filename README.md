@@ -17,8 +17,8 @@ Path -_**Math**_
 - [PowerOfThree.java](leetcode/src/main/java/org/competition/leetcode/math/PowerOfThree.java)
 
 Path -_**Math in String**_
- - https://leetcode.com/problems/plus-one/description/ [TODO]
- - https://leetcode.com/problems/add-binary/description/ [TODO]
+ - [PlusOne.java](leetcode/src/main/java/org/competition/leetcode/array/PlusOne.java)
+ - [AddBinary.java](leetcode/src/main/java/org/competition/leetcode/strings/AddBinary.java)
  - https://leetcode.com/problems/add-strings/description/ [TODO]
- - https://leetcode.com/problems/add-two-numbers/description/ [TODO]
- - https://leetcode.com/problems/multiply-strings/description/ [TODO]
+ - [AddTwoNumber.java](https://github.com/codeWriter9/competition/blob/master/leetcode/src/main/java/org/competition/leetcode/linkedlist/AddTwoNumber.java)
+ - [MultiplyStringTest.java](https://github.com/codeWriter9/competition/blob/master/leetcode/src/test/java/org/competition/leetcode/strings/MultiplyStringTest.java)
