@@ -9,7 +9,7 @@ import static org.junit.Assert.*;
 /**
  *
  *
- * TODO: complete this
+ *
  *
  *
  */
@@ -25,28 +25,11 @@ public class MultiplyStringTest {
     @Test
     public void testMultiply() {
         assertNotNull(multiplyString);
-        for (int index = 0; index < 10; index++) {
-            assertArrayEquals(new int[]{index}, multiplyString.convertToIntegerArray(index + ""));
-        }
-        assertArrayEquals(new int[]{1, 0},
-                multiplyString.convertToIntegerArray("10"));
-        assertArrayEquals(new int[]{9, 8, 7, 6, 5, 4, 3, 2, 1, 0},
-                multiplyString.convertToIntegerArray("9876543210"));
-
-        for (int index = 0; index < 10; index++) {
-            assertEquals("" + index, multiplyString.convertToString(new int[]{index}));
-        }
-
-        assertEquals("10",
-                multiplyString.convertToString(new int[]{1, 0}));
-        assertEquals("9876543210",
-                multiplyString.convertToString(new int[]{9, 8, 7, 6, 5, 4, 3, 2, 1, 0}));
-
-        assertEquals("[1, 1]", multiplyString.multiply(new int [] {1, 1}, 1).toString());
-        assertEquals("[8, 9, 1]", multiplyString.multiply(new int [] {9, 9}, 9).toString());
-        assertEquals("[5, 5, 7, 9]", multiplyString.multiply(new int [] {7, 9, 7}, 7).toString());
-
-
+        assertEquals("6", multiplyString.multiply("2", "3"));
+        assertEquals("56088", multiplyString.multiply("123", "456"));
+        assertEquals("300", multiplyString.multiply("3", "100"));
+        assertEquals("10000", multiplyString.multiply("5", "2000"));
+        assertEquals("10000", multiplyString.multiply("2000", "5"));
     }
 
     @After
