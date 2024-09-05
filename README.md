@@ -21,4 +21,4 @@ Path -_**Math in String**_
  - [AddBinary.java](leetcode/src/main/java/org/competition/leetcode/strings/AddBinary.java)
  - [AddString.java](leetcode/src/main/java/org/competition/leetcode/strings/AddString.java)
  - [AddTwoNumber.java](https://github.com/codeWriter9/competition/blob/master/leetcode/src/main/java/org/competition/leetcode/linkedlist/AddTwoNumber.java)
- - [MultiplyStringTest.java](https://github.com/codeWriter9/competition/blob/master/leetcode/src/test/java/org/competition/leetcode/strings/MultiplyStringTest.java)
+ - [MultiplyString.java](leetcode/src/main/java/org/competition/leetcode/strings/MultiplyString.java))
