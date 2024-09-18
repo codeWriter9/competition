@@ -26,3 +26,7 @@ Path -_**Math in String**_
 Path -_**Game Playing**_
  - [CoinGameWinner.java](leetcode/src/main/java/org/competition/leetcode/game/CoinGameWinner.java)
  - [NumberOfWinningPlayers.java](leetcode/src/main/java/org/competition/leetcode/game/NumberOfWinningPlayers.java)
+
+Path -_**Binary Search**_
+ - [BinarySearch.java](leetcode/src/main/java/org/competition/leetcode/array/BinarySearch.java)
+ - [SearchInsertPosition.java](leetcode/src/main/java/org/competition/leetcode/binarysearch/SearchInsertPosition.java)
