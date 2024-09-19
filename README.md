@@ -15,6 +15,7 @@ Path - _**Two Pointer**_
 
 Path -_**Math**_
 - [PowerOfThree.java](leetcode/src/main/java/org/competition/leetcode/math/PowerOfThree.java)
+- [MissingNumber.java](leetcode/src/main/java/org/competition/leetcode/math/MissingNumber.java)
 
 Path -_**Math in String**_
  - [PlusOne.java](leetcode/src/main/java/org/competition/leetcode/array/PlusOne.java)
@@ -31,3 +32,4 @@ Path -_**Binary Search**_
  - [BinarySearch.java](leetcode/src/main/java/org/competition/leetcode/array/BinarySearch.java)
  - [SearchInsertPosition.java](leetcode/src/main/java/org/competition/leetcode/binarysearch/SearchInsertPosition.java)
  - [SquareRoot.java](leetcode/src/main/java/org/competition/leetcode/math/SquareRoot.java)
+ - [MissingNumber.java](leetcode/src/main/java/org/competition/leetcode/math/MissingNumber.java)
