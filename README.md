@@ -30,3 +30,4 @@ Path -_**Game Playing**_
 Path -_**Binary Search**_
  - [BinarySearch.java](leetcode/src/main/java/org/competition/leetcode/array/BinarySearch.java)
  - [SearchInsertPosition.java](leetcode/src/main/java/org/competition/leetcode/binarysearch/SearchInsertPosition.java)
+ - [SquareRoot.java](leetcode/src/main/java/org/competition/leetcode/math/SquareRoot.java)
