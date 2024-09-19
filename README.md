@@ -33,3 +33,4 @@ Path -_**Binary Search**_
  - [SearchInsertPosition.java](leetcode/src/main/java/org/competition/leetcode/binarysearch/SearchInsertPosition.java)
  - [SquareRoot.java](leetcode/src/main/java/org/competition/leetcode/math/SquareRoot.java)
  - [MissingNumber.java](leetcode/src/main/java/org/competition/leetcode/math/MissingNumber.java)
+ - [FirstBadVersion.java](leetcode/src/main/java/org/competition/leetcode/binarysearch/FirstBadVersion.java)
