@@ -34,4 +34,5 @@ Path -_**Binary Search**_
  - [SquareRoot.java](leetcode/src/main/java/org/competition/leetcode/math/SquareRoot.java)
  - [MissingNumber.java](leetcode/src/main/java/org/competition/leetcode/math/MissingNumber.java)
  - [FirstBadVersion.java](leetcode/src/main/java/org/competition/leetcode/binarysearch/FirstBadVersion.java)
- - [ValidPerfectSquare.java](https://github.com/codeWriter9/competition/blob/master/leetcode/src/main/java/org/competition/leetcode/math/ValidPerfectSquare.java)
+ - [ValidPerfectSquare.java](leetcode/src/main/java/org/competition/leetcode/math/ValidPerfectSquare.java)
+ - [GuessNumber.java](leetcode/src/main/java/org/competition/leetcode/binarysearch/GuessNumber.java)
