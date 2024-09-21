@@ -36,3 +36,5 @@ Path -_**Binary Search**_
  - [FirstBadVersion.java](leetcode/src/main/java/org/competition/leetcode/binarysearch/FirstBadVersion.java)
  - [ValidPerfectSquare.java](leetcode/src/main/java/org/competition/leetcode/math/ValidPerfectSquare.java)
  - [GuessNumber.java](leetcode/src/main/java/org/competition/leetcode/binarysearch/GuessNumber.java)
+ - [ArrangingCoins.java](leetcode/src/main/java/org/competition/leetcode/binarysearch/ArrangingCoins.java)
+ - [SmallestLetterBiggerTarget.java](leetcode/src/main/java/org/competition/leetcode/binarysearch/SmallestLetterBiggerTarget.java)
