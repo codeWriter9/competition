@@ -39,3 +39,4 @@ Path -_**Binary Search**_
  - [ArrangingCoins.java](leetcode/src/main/java/org/competition/leetcode/binarysearch/ArrangingCoins.java)
  - [SmallestLetterBiggerTarget.java](leetcode/src/main/java/org/competition/leetcode/binarysearch/SmallestLetterBiggerTarget.java)
  - [RotatedArraySearch.java](leetcode/src/main/java/org/competition/leetcode/binarysearch/RotatedArraySearch.java)
+ - [Search2DMatrix.java](leetcode/src/main/java/org/competition/leetcode/binarysearch/Search2DMatrix.java)
