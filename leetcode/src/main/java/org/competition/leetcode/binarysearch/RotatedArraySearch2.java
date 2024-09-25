@@ -28,7 +28,7 @@ public class RotatedArraySearch2 {
                 // there might be a scenario where left, mid and right are same
             {
                 left++;// towards mid
-                right--;// towards mid
+                right--;// towards mid   
             }
             else if(nums[left] <= nums[mid]) { // left to mid is kind of sorted so pivot is to right of mid
                 if(nums[left] <= target && target < nums[mid]) {
