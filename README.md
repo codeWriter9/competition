@@ -42,3 +42,4 @@ Path -_**Binary Search**_
  - [Search2DMatrix.java](leetcode/src/main/java/org/competition/leetcode/binarysearch/Search2DMatrix.java)
  - [RotatedArrayMin.java](leetcode/src/main/java/org/competition/leetcode/binarysearch/RotatedArrayMin.java)
  - [RotatedArraySearch2.java](leetcode/src/main/java/org/competition/leetcode/binarysearch/RotatedArraySearch2.java)
+ - [TwoSumSorted.java](leetcode/src/main/java/org/competition/leetcode/binarysearch/TwoSumSorted.java)
