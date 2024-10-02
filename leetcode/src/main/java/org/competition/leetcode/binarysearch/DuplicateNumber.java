@@ -3,9 +3,6 @@ package org.competition.leetcode.binarysearch;
 public class DuplicateNumber {
 
     /**
-     *
-     *
-     *
      * @param nums
      * @return
      */
@@ -13,25 +10,24 @@ public class DuplicateNumber {
     public int findDuplicate(int[] nums) {
         int start = 0;
         int end = nums.length - 1;
-        while(start <= end) { // from start to end
-            int mid = start + (end - start) / 2; // find a random mid point
+
+        while (start < end) { // from start to end
+            int mid = start + (end - start) / 2; // find a mid-point
             int count = 0;
-            for(int i=0;i<nums.length;i++) { // are there
-                if(nums[i] <= mid) count++; // numbers 'more' than 'mid'
+            for (int i = 0; i < nums.length; i++) { // are there
+                if (nums[i] <= mid) count++; // numbers 'more' than 'mid'
             }
-            if(count <= mid) { // if count of numbers is greater than mid -> search in [mid + 1, end]
+            if (count <= mid) { // if count of numbers is greater than mid -> search in [mid + 1, end]
                 start = mid + 1;// as count of numbers strictly greater than mid is less
-            }
-            else { // else search in [start, mid]
+            } else { // else search in [start, mid]
                 end = mid;
             }
         }
-        return start;// never here
+        return start;// return the duplicate
     }
 
     /**
-     *
-     * Do Not Use - This goes into an infinite loop and I do not have time to check why
+     * The original method supplied by one of the LC Users
      *
      * @param nums
      * @return
