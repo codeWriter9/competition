@@ -44,3 +44,4 @@ Path -_**Binary Search**_
  - [RotatedArraySearch2.java](leetcode/src/main/java/org/competition/leetcode/binarysearch/RotatedArraySearch2.java)
  - [TwoSumSorted.java](leetcode/src/main/java/org/competition/leetcode/binarysearch/TwoSumSorted.java)
  - [HIndex.java](leetcode/src/main/java/org/competition/leetcode/binarysearch/HIndex.java)
+ - [DuplicateNumber.java](leetcode/src/main/java/org/competition/leetcode/binarysearch/DuplicateNumber.java)
